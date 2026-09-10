@@ -1,34 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estética</title>
-     <link rel="stylesheet" href="style.css">
-    <style>
-         body{
-   background-color: rgb(217, 221, 202)
-        }
-    </style>
+    <title>Estética-Maquiagem</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <!-- <header é uma tag semântica: ela existe especificamente para marcar 
-     o cabeçalho do site. Class="header" conecta essa tag coma css-->
+    <!--
+        Cabeçalho do meu projeto:
+        logo, título, menu e botão do menu hambúrguer.
+    -->
     <header class="header">
-        <!-- Essa div é so um envelope interno, usado
-         para limitar a largura do conteúdo e organizar os itens com Flexbox -->
+        <!-- Container para organizar os elementos do cabeçalho -->
         <div class="centralizar-tudo">
-            <a href="#">
-                <img src="assets/image.jpg" style="width: 150px; height: auto;" alt="Logo Estética">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="assets/image.jpg" alt="Logo do Estética-Maquiagem">
             </a>
-                
+            <!-- Nome do projeto -->
+            <h1>
+                Estética<span>-Maquiagem</span>
+            </h1>
+            <!-- Menu de navegação -->
             <ul class="nav" id="nav">
-
-                    <li><a href="#">Incío</a></li>
-                    <li><a href="#">Agendar</a></li>                    
+                <li>
+                    <a href="#">Início</a>
+                </li>
+                <li>
+                    <a href="#">Recursos</a>
+                </li>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
             </ul>
-            </div>
+
+            <!-- Botão do menu para telas pequenas -->
+            <button class="hamburguer" id="btn-menu">☰</button>
         </div>
+
     </header>
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 </html>
